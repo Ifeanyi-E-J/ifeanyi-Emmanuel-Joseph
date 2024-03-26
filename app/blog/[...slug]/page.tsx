@@ -2,6 +2,8 @@ import { posts } from "#site/content";
 import { MDXContent } from "@/components/mdx-components";
 import { notFound } from "next/navigation";
 
+import "@/styles/mdx.css";
+
 interface PostPageProps {
 	params: {
 		slug: string[];
@@ -30,10 +32,12 @@ export default async function PostPage({ params }: PostPageProps) {
 		<article className="container py-6 prose dark:prose-invert max-w-3xl mx-auto">
 			<h1 className="mb-2">{post.title}</h1>
 			{post.description ? (
-				<p className="text-xl mt-0 text-muted-foreground mb-4">{post.description}</p>
-            ) : null}
-            
-            <MDXContent code={post.body} />
+				<p className="text-xl mt-0 text-muted-foreground mb-4">
+					{post.description}
+				</p>
+			) : null}
+
+			<MDXContent code={post.body} />
 		</article>
 	);
 }
