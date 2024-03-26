@@ -6,6 +6,7 @@ import { buttonVariants } from "./ui/button";
 import { Icons } from "./Icons";
 import MainNav from "./main-nav";
 import { MobileNav } from "./mobile-nav";
+import { ModeToggle } from "./mode-toggle";
 
 const SiteHeader = () => {
 	return (
@@ -44,9 +45,10 @@ const SiteHeader = () => {
 								<Icons.twitter className="h-4 w-4" />
 								<span className="sr-only">linkedIn</span>
 							</div>
-                        </Link>
-                        
-                        <MobileNav />
+						</Link>
+
+						<ModeToggle />
+						<MobileNav />
 					</nav>
 				</div>
 			</div>
