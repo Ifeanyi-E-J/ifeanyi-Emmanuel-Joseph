@@ -6,7 +6,7 @@ export const siteConfig = {
 	links: {
 		twitter: "",
 		github: "https://github.com/The2MinEngineer",
-		Resume:
+		resume:
 			"https://drive.google.com/file/d/1MNkzyMeeSI2_3Otk37vUt4u6j2UchcOL/view?usp=drive_link",
 		linkedIn: "https://www.linkedin.com/in/ifeanyi-emmanuel/",
 	},

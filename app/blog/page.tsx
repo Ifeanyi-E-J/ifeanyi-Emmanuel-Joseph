@@ -13,8 +13,8 @@ interface BlogPageProps {
 
 export default async function BlogPage({ searchParams }: BlogPageProps) {
 	const currentPage = Number(searchParams?.page) || 1;
-    const sortedPosts = sortPosts(posts.filter((post) => post.published))
-    const totalPages = Math.ceil(sortedPosts.length / POSTS_PER_PAGE)
+	const sortedPosts = sortPosts(posts.filter((post) => post.published));
+	const totalPages = Math.ceil(sortedPosts.length / POSTS_PER_PAGE);
 
 	const displayPosts = sortedPosts.slice(
 		POSTS_PER_PAGE * (currentPage - 1),
@@ -50,8 +50,11 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
 				</ul>
 			) : (
 				<p>Nothing to see here yet.</p>
-            )}
-            <QueryPagination totalPages={totalPages} className="justify-end mt-4" />
+			)}
+			<QueryPagination
+				totalPages={totalPages}
+				className="justify-end mt-4"
+			/>
 		</div>
 	);
 }
