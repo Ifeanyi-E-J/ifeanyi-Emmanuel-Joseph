@@ -5,6 +5,7 @@ import React from "react";
 import { buttonVariants } from "./ui/button";
 import { Icons } from "./Icons";
 import MainNav from "./main-nav";
+import { MobileNav } from "./mobile-nav";
 
 const SiteHeader = () => {
 	return (
@@ -21,7 +22,7 @@ const SiteHeader = () => {
 							<div
 								className={cn(
 									buttonVariants({ variant: "ghost" }),
-									"w-10 px-0"
+									"w-10 px-0 hidden sm:inline-flex"
 								)}
 							>
 								<Icons.gitHub className="h-4 w-4" />
@@ -37,13 +38,15 @@ const SiteHeader = () => {
 							<div
 								className={cn(
 									buttonVariants({ variant: "ghost" }),
-									"w-10 px-0"
+									"w-10 px-0 hidden sm:inline-flex "
 								)}
 							>
 								<Icons.twitter className="h-4 w-4" />
 								<span className="sr-only">linkedIn</span>
 							</div>
-						</Link>
+                        </Link>
+                        
+                        <MobileNav />
 					</nav>
 				</div>
 			</div>
