@@ -1,7 +1,6 @@
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import React from "react";
 import { buttonVariants } from "./ui/button";
 import { Icons } from "./Icons";
 import MainNav from "./main-nav";
