@@ -16,10 +16,10 @@ export default function Home() {
 					</h1>
 					<p className="max-w-[42rem] mx-auto text-muted-foreground sm:text-xl text-balance">
 						Embark on a journey through the realms of technology!! Here, I open
-						the doors to my world. Together, we'll explore the highs and lows of
-						tech; going through real life experiences/approaches to solving
-						problems and my personal insights. You'll have first hand access to
-						my projects and achievements too!
+						the doors to my world. Together, we&apos;ll explore the highs and
+						lows of tech; going through real life experiences/approaches to
+						solving problems and my personal insights. You&apos;ll have first
+						hand access to my projects and achievements too!
 					</p>
 					<div className="flex flex-col gap-4 justify-center sm:flex-row">
 						<Link
