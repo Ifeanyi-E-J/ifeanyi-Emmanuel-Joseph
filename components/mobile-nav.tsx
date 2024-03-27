@@ -55,6 +55,13 @@ export function MobileNav() {
 					<Link
 						target="_blank"
 						rel="noreferrer"
+						href={siteConfig.links.twitter}
+					>
+						Twitter
+					</Link>
+					<Link
+						target="_blank"
+						rel="noreferrer"
 						href={siteConfig.links.linkedIn}
 					>
 						LinkedIn

@@ -12,11 +12,14 @@ export default function Home() {
 			<section className="space-y-6 py-5 md:py-6 lg:py-7">
 				<div className="container flex flex-col gap-4 text-center">
 					<h1 className="text-3xl sm:5xl md:6xl lg:7xl font-black text-balance">
-						Hi, I&apos;m Ifeanyi
+						Hi! I&apos;m Ifeanyi, a software engineer based in Nigeria
 					</h1>
 					<p className="max-w-[42rem] mx-auto text-muted-foreground sm:text-xl text-balance">
-						Welcome to my website, built using tailwind, shadcn, velite and Next
-						14.
+						Embark on a journey through the realms of technology!! Here, I open
+						the doors to my world. Together, we'll explore the highs and lows of
+						tech; going through real life experiences/approaches to solving
+						problems and my personal insights. You'll have first hand access to
+						my projects and achievements too!
 					</p>
 					<div className="flex flex-col gap-4 justify-center sm:flex-row">
 						<Link

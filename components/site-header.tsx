@@ -6,6 +6,7 @@ import { Icons } from "./Icons";
 import MainNav from "./main-nav";
 import { MobileNav } from "./mobile-nav";
 import { ModeToggle } from "./mode-toggle";
+import { Linkedin } from "lucide-react";
 
 const SiteHeader = () => {
 	return (
@@ -31,7 +32,7 @@ const SiteHeader = () => {
 						</Link>
 
 						<Link
-							href={siteConfig.links.linkedIn}
+							href={siteConfig.links.twitter}
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -42,7 +43,23 @@ const SiteHeader = () => {
 								)}
 							>
 								<Icons.twitter className="h-4 w-4" />
-								<span className="sr-only">linkedIn</span>
+								<span className="sr-only">Twitter</span>
+							</div>
+						</Link>
+
+						<Link
+							href={siteConfig.links.linkedIn}
+							target="_blank"
+							rel="noreferrer"
+						>
+							<div
+								className={cn(
+									buttonVariants({ variant: "ghost" }),
+									"w-10 px-0 hidden sm:inline-flex "
+								)}
+							>
+								<Linkedin className="h-4 w-4" />
+								<span className="sr-only">LinkedIn</span>
 							</div>
 						</Link>
 

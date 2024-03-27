@@ -9,7 +9,6 @@ import {
 	PaginationPrevious,
 	PaginationNext,
 } from "./ui/pagination";
-import { create } from "domain";
 
 interface QueryPaginationProps {
 	totalPages: number;

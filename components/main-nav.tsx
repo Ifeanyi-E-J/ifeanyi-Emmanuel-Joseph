@@ -1,8 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
-import { Icons } from "./Icons";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
@@ -15,7 +13,6 @@ const MainNav = () => {
 				href="/"
 				className="mr-6 flex items-center space-x-2"
 			>
-				<Icons.logo className="h-6 w-6" />
 				<span className="font-bold">{siteConfig.name}</span>
 			</Link>
 			<Link

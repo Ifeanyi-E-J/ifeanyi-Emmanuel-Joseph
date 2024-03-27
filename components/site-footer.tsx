@@ -1,5 +1,5 @@
 import { siteConfig } from "@/config/site";
-import { Mail } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import { Icons } from "./Icons";
 
 export function SiteFooter() {
@@ -22,6 +22,14 @@ export function SiteFooter() {
 					>
 						<span className="sr-only">Twitter</span>
 						<Icons.twitter className="h-6 w-6" />
+					</a>
+					<a
+						target="_blank"
+						rel="noreferrer"
+						href={siteConfig.links.linkedIn}
+					>
+						<span className="sr-only">LinkedIn</span>
+						<Linkedin className="h-6 w-6" />
 					</a>
 					<a
 						target="_blank"
